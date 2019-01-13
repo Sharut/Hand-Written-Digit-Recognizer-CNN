@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 
 for index in range(10):
-    img = Image.open('data/' + str(index) + '.png').convert("L")
+    img = Image.open('./my_img.png')
     img = img.resize((28,28))
     im2arr = np.array(img)
     im2arr = im2arr.reshape(1,28,28,1)
